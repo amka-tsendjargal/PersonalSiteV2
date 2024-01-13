@@ -10,7 +10,8 @@ export default function ProjectsSection() {
             <Project title={"Travel Agency Full Stack Web App"}
                      stack={["C#", "ASP.NET Core", "MSSQL", "Bootstrap"]}
                      description={"A travel agency website that allows customers to register and login, allowing users to view products/packages offered by the agency as well as view their past purchases and transactions."}
-                     projectLink="https://github.com/amka-tsendjargal/Workshop5"/>
+                     projectLink="https://github.com/amka-tsendjargal/Workshop5"
+                     reverse={true}/>
         </div>
     )
 }
