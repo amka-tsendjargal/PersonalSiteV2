@@ -1,10 +1,13 @@
+import ExternalLinks from "./ExternalLinks";
+
 export default function AboutMe() {
     return (
         <div id="about" className="flex w-screen min-h-screen">
             <div className="flex flex-row items-center w-full h-screen p-28">
                 <div className="w-1/2">
                     <h1 className="text-6xl">About</h1>
-                    <h1 className="text-6xl">Me</h1>
+                    <h1 className="text-6xl mb-10">Me</h1>
+                    <ExternalLinks />
                 </div>
                 <div className="flex flex-col w-1/2">
                     <h1 className="text-3xl font-medium">I am a software developer based in</h1>
