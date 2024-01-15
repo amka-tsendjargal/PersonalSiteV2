@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { SuccessAlert, ErrorAlert } from "./alerts"
+import Footer from "./footer"
 
 
 
@@ -24,6 +25,12 @@ export default function Contact() {
         })
 
         setResponse(response)
+        if (response.ok) {
+            setName("")
+            setEmail("")
+            setSubject("")
+            setMessage("")
+        }
     }
 
     useEffect(() => {
@@ -34,17 +41,16 @@ export default function Contact() {
     }, [response])
 
     useEffect(() => {
-        console.log(showAlert)
         if (showAlert) {
             setTimeout(() => {
                 setShowAlert(false)
-            }, 5000)
+            }, 3000)
         }
     }, [showAlert])
 
     return (
-        <div id="contact" className="flex w-screen min-h-screen">
-            <div className="flex flex-col justify-center items-center w-full h-screen p-28">
+        <div id="contact" className="relative flex flex-col w-screen min-h-screen">
+            <div className="flex flex-col justify-center items-center w-full h-screen px-28 pt-28">
                 <h1 className="text-4xl mb-10">Get In Touch</h1>
                 <form onSubmit={onSubmit} className="flex flex-col justify-center w-1/3">
                     <div className="relative z-0 mb-5">
@@ -81,14 +87,16 @@ export default function Contact() {
                             required/>
                         <label htmlFor="message" className="absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-sky-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Message</label>
                     </div>
-                    <div className="w-full text-center mb-10">
+                    <div className="w-full text-center mb-5">
                         <button type='submit' className="w-1/3 min-w-[115px] border-sm border-2 border-sky-600 rounded-sm font-bold text-sky-600 hover:bg-sky-600 hover:text-white transition duration-300 ease-in-out">Submit</button>
                     </div>
-                    <div className="w-full text-center h-20">
+                    <div className="w-full text-center h-10">
                         { showAlert ? <>{(status ? <SuccessAlert /> : <ErrorAlert />)}</> : <></> }
                     </div>
                 </form>
+                <Footer />
             </div>
+
         </div>
     )
 }

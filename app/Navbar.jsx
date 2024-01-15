@@ -3,7 +3,12 @@ export default function Navbar() {
         <nav className="bg-sky-600 fixed w-full z-20 border-gray-200">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="#hero" className="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" />
+                    <picture>
+                        <source srcSet="/logo-sm.png" media="(max-width: 768px)"/>
+                        <source srcSet="/logo.png" />
+                        <img src="/logo.png" className="h-10" alt="Flowbite Logo" />
+                    </picture>
+                    
                 </a>
                 <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
                     <span className="sr-only">Open main menu</span>
