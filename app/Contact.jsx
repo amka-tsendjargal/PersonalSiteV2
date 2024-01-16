@@ -50,9 +50,9 @@ export default function Contact() {
 
     return (
         <div id="contact" className="relative flex flex-col w-screen min-h-screen">
-            <div className="flex flex-col justify-center items-center w-full h-screen px-28 pt-28">
+            <div className="flex flex-col justify-center items-center w-full h-screen px-5 md:px-28 py-28">
                 <h1 className="text-4xl mb-10">Get In Touch</h1>
-                <form onSubmit={onSubmit} className="flex flex-col justify-center w-1/3">
+                <form onSubmit={onSubmit} className="flex flex-col justify-center w-[350px] md:w-1/3">
                     <div className="relative z-0 mb-5">
                         <input type="text" id="name" 
                             className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-sky-600 peer" 
