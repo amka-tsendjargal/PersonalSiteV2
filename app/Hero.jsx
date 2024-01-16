@@ -23,7 +23,7 @@ export default function Hero() {
         };
     }, []);
     return (
-        <div id="hero" className="flex flex-col gap-3 justify-center w-full min-h-screen px-5 py-28 md:p-28 bg-[url('/layered-waves-hero.svg')] bg-cover">
+        <div id="hero" className="flex flex-col gap-3 justify-center w-screen min-h-screen px-5 py-28 md:p-28 bg-[url('/layered-waves-hero.svg')] bg-cover">
             <h1 className="text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl">Amka Tsendjargal </h1>
             <h2 className="text-xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl min-h-[58px]"><span ref={el} className="min-h-[58px]"></span></h2>
             <ResumeDropdown />
