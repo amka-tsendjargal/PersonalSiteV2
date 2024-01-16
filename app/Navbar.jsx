@@ -1,6 +1,6 @@
 export default function Navbar() {
     return (
-        <nav className="bg-sky-600 fixed w-full z-20 border-gray-200">
+        <nav className="bg-sky-600 fixed w-screen z-20 border-gray-200">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="#hero" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <picture>
