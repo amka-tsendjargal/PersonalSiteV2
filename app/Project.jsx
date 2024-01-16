@@ -12,8 +12,8 @@ export default function Project({
         <div className={`lg:flex items-center md:h-screen w-full lg:px-28 pt-28 pb-0 md:py-28 ${reverse ? 'lg:flex-row-reverse' : ''}`}>
             <div className="lg:w-1/2">
                 <div className="relative mx-auto border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
-                    <div className="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white">
-                        <img src={demoImage} className="object-scale-down h-[156px] md:h-[278px] w-full rounded-xl" alt="" />
+                    <div className="rounded-sm overflow-hidden h-[156px] md:h-[278px]">
+                        <img src={demoImage} className="object-fill h-[156px] md:h-[278px] w-full rounded-xl" alt="" />
                     </div>
                 </div>
                 <div className="relative mx-auto mb-10 lg:mb-0 bg-gray-900 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
