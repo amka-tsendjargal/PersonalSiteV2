@@ -10,8 +10,8 @@ export default function ResumeDropdown() {
             transition-all duration-300 invisible  opacity-0 
             '>
                 <ul className='py-6 px-3 flex flex-col gap-3'>
-                    <li className='cursor-pointer bg-sky-300 p-3 rounded-md hover:opacity-90 text-white'><a className="block" href="/resume_amka.docx" target="_blank">.docx</a></li>
-                    <li className='cursor-pointer bg-blue-300 p-3 rounded-md hover:opacity-90 text-white'><a className="block" href="/resume_amka.pdf" target="_blank">.pdf</a></li>
+                    <li className='cursor-pointer bg-sky-300 p-3 rounded-md hover:opacity-90 text-white'><a className="block" href="/amka_tsendjargal.docx" target="_blank">.docx</a></li>
+                    <li className='cursor-pointer bg-blue-300 p-3 rounded-md hover:opacity-90 text-white'><a className="block" href="/amka_tsendjargal.pdf" target="_blank">.pdf</a></li>
                 </ul>
             </div>
         </div>
