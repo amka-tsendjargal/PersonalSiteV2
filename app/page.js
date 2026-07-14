@@ -1,17 +1,22 @@
-import Image from 'next/image'
-import Navbar from './Navbar'
-import Hero from './Hero'
-import ProjectsSection from './ProjectsSection'
-import AboutMe from './AboutMe'
-import Contact from './Contact'
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import AboutMe from './components/AboutMe'
+import Skills from './components/Skills'
+import ProjectsSection from './components/ProjectsSection'
+import Experience from './components/Experience'
+import Contact from './components/Contact'
+import GalaxyBackground from './components/GalaxyBackground'
 
 export default function Home() {
   return (
     <div>
+      <GalaxyBackground />
       <Navbar />
       <Hero />
-      <ProjectsSection />
       <AboutMe />
+      <Skills />
+      <ProjectsSection />
+      <Experience />
       <Contact />
     </div>
   )
