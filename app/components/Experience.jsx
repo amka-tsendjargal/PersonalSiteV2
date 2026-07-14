@@ -8,7 +8,7 @@ const EXPERIENCE = [
 export default function Experience() {
     return (
         <Reveal>
-            <div id="experience" className="px-5 py-10 md:px-14 md:py-16">
+            <div id="experience" className="scroll-mt-[88px] px-5 py-10 md:px-14 md:py-16">
                 <div className="max-w-[1160px] mx-auto">
                     <div className="text-accent text-[13px] font-semibold uppercase tracking-[0.06em] mb-6">Experience</div>
                     <div className="flex flex-col">

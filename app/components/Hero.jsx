@@ -2,7 +2,7 @@ import ResumeDropdown from "./ResumeDropdown"
 
 export default function Hero() {
     return (
-        <div id="hero" className="relative z-10 px-5 pt-16 pb-14 md:px-14 md:pt-[110px] md:pb-[90px] animate-[fadeUp_0.7s_ease_both]">
+        <div id="hero" className="relative z-10 scroll-mt-[88px] px-5 pt-16 pb-14 md:px-14 md:pt-[110px] md:pb-[90px] animate-[fadeUp_0.7s_ease_both]">
             <div className="max-w-[1160px] mx-auto">
                 <div className="max-w-[640px]">
                     <div className="text-sm font-semibold text-accent mb-[18px]">Hey, I&apos;m Amka 👋</div>

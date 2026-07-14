@@ -48,7 +48,7 @@ export default function Contact() {
 
     return (
         <Reveal>
-            <div id="contact" className="px-5 pt-14 pb-16 md:px-14 md:pt-[70px] md:pb-[90px]">
+            <div id="contact" className="scroll-mt-[88px] px-5 pt-14 pb-16 md:px-14 md:pt-[70px] md:pb-[90px]">
                 <div className="max-w-[1160px] mx-auto">
                     <h1 className="text-2xl md:text-[30px] font-bold text-ink mb-3">Let&apos;s work together</h1>
                     <p className="text-white/60 text-base mb-8 max-w-[420px]">Have a project in mind, or just want to say hi? Drop me a note.</p>

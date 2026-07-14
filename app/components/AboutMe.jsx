@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function AboutMe() {
     return (
         <Reveal>
-            <div id="about" className="px-5 py-12 md:px-14 md:py-[70px]">
+            <div id="about" className="scroll-mt-[88px] px-5 py-14 md:px-14 md:py-[70px]">
                 <div className="max-w-[1160px] mx-auto flex flex-col md:flex-row gap-8 md:gap-14 md:items-center">
                     <div
                         className="relative overflow-hidden w-[170px] h-[170px] md:w-[220px] md:h-[220px] rounded-2xl flex-shrink-0 flex items-center justify-center font-mono text-[11px] text-muted text-center"

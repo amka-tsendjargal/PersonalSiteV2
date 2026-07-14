@@ -19,7 +19,7 @@ const PROJECTS = [
 export default function ProjectsSection() {
     return (
         <Reveal>
-            <div id="projects" className="px-5 py-10 md:px-14 md:py-16">
+            <div id="projects" className="scroll-mt-[88px] px-5 py-10 md:px-14 md:py-16">
                 <div className="max-w-[1160px] mx-auto">
                     <div className="text-accent text-[13px] font-semibold uppercase tracking-[0.06em] mb-6">Selected work</div>
                     <div className="flex flex-col gap-5">

@@ -13,7 +13,7 @@ export default function Navbar() {
     return (
         <nav className="sticky top-0 z-20 bg-panel backdrop-blur-md border-b border-hairline">
             <div className="px-5 py-5 md:px-14 md:py-6">
-            <div className="max-w-[1160px] mx-auto flex justify-between items-center">
+            <div className="max-w-[1160px] mx-auto flex flex-wrap justify-between items-center">
                 <a href="#hero" className="flex items-center" onClick={() => setOpen(false)}>
                     <picture>
                         <source srcSet="/logo-sm.png" media="(max-width: 768px)" />
